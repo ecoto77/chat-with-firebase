@@ -1,0 +1,13 @@
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+
+// con esta clase de css, no importa el resize que le hagamos a la pagina, siempre
+// nos va a dejar 160px; at the bottom, para dejar espacio al form
+.container-chat{
+    height: calc(100vh - 160px);
+    overflow-y:scroll;   //overflow en el eje Y de tipo scroll, aparecera cuando hayan muchos mensajes en el chat
+}

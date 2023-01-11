@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat con Firebase</title>
+    <!-- https://firebase.google.com/docs/auth/web/start?hl=es#set_an_authentication_state_observer_and_get_user_data -->
+    <link rel="stylesheet" href="sass/custom.css">
+ 
+<body>
+<!-- https://bluuweb.github.io/desarrollo-web-bluuweb/13-b-chat/ -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a href="https://console.firebase.google.com/u/0/" class="navbar-brand" id="nombreUsuario" target="_blank"><i class="bi bi-tencent-qq"></i>&nbsp;Bootstrap Chat</a>
+            <div>
+                <button class="btn btn-primary" id="btnIngreso">Ingresar</button>
+                <button class="btn btn-danger" id="btnCerrarSesion">Cerrar Sesion</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-3 container-chat bg-secondary" id="contenidoWeb">
+        <div class="text-start">
+            <span class="badge bg-secondary">Secondary</span>
+        </div>
+        <div class="text-end">
+            <span class="badge bg-info">Yo</span>
+        </div>
+    </main>
+    <form action="#" id="formulario" class="container mb-3 fixed-bottom"></form>
+    <input type="text" class="form-control" placeholder="..." id="texto">
+    <button class="btn btn-dark w-100 mt-2" type="submit">Enviar</button>
+
+   <script type="module" src="app.js"></script>
+</body>
+</html
